@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent2 = new Intent(this, ActivitySettings.class);
                 startActivity(intent2);
                 break;
+            case R.id.mRefresh:
+                Toast.makeText(this, getResources().getString(R.string.menu_refresh), Toast.LENGTH_SHORT).show();
+                break;
         }
         return super.onOptionsItemSelected(item);
     }

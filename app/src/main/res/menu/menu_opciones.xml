@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/mAbout"
         android:title="@string/menu_about"
@@ -10,6 +11,14 @@
         android:id="@+id/mSettings"
         android:title="@string/menu_settings"
         android:orderInCategory="101">
+
+    </item>
+    <item
+        android:id="@+id/mRefresh"
+        android:title="@string/menu_refresh"
+        android:orderInCategory="102"
+        app:showAsAction="always"
+        android:icon="@drawable/refresh_48">
 
     </item>
 </menu>
